@@ -176,6 +176,11 @@ export const DATA = {
           href: "https://notif.frigglab.com/",
           icon: <Icons.globe className="size-4" />,
         },
+        {
+          type: "Source (private)",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
       image: "",
       video:
@@ -199,6 +204,11 @@ export const DATA = {
           type: "Website",
           href: "https://autolaris.com/",
           icon: <Icons.globe className="size-4" />,
+        },
+        {
+          type: "Source (private)",
+          href: "",
+          icon: <Icons.github className="size-3" />,
         }
       ],
       image: "",
@@ -225,8 +235,8 @@ export const DATA = {
           icon: <Icons.globe className="size-4" />,
         },
         {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          type: "Source (private)",
+          href: "",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -255,6 +265,11 @@ export const DATA = {
           href: "",
           icon: <Icons.globe className="size-4" />,
         },
+        {
+          type: "Source (private)",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
       image: "",
       video:
