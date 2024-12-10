@@ -1,0 +1,65 @@
+---
+title: "caddy or nginx"
+publishedAt: "2024-12-09"
+summary: "Caddy or nginx"
+---
+
+If you’ve worked with web servers before, you’ve probably heard of Nginx. It’s one of the most popular web servers out there, and for good reason. But after using Nginx for a long time, I decided to switch to Caddy, and today I want to share why I made the change.
+
+While both Caddy and Nginx serve the same core purpose as web servers, Caddy has some unique features that make it stand out, especially for developers like me who need simplicity and ease of use. Here’s why I made the switch:
+
+1. Simpler Configuration
+
+The most notable difference between Caddy and Nginx is the simplicity of Caddy’s configuration. While Nginx requires a lot of detailed configuration in its .conf files, Caddy uses a much more concise and easy-to-understand Caddyfile. Setting up reverse proxies, SSL certificates, and other configurations can be done with just a few lines of code in Caddy. This simplicity is a huge time-saver, especially when you’re focused on development rather than server setup.
+
+2. Automatic HTTPS for Local Development
+
+One of the biggest advantages of Caddy is its built-in support for HTTPS, even for local development. With Caddy, you don’t have to worry about generating or renewing SSL certificates for local projects. It handles everything automatically, which is a huge relief when working on local environments that require HTTPS.
+
+3. Built-in Features
+
+Caddy comes with a lot of features out-of-the-box, which you usually have to install and configure separately with Nginx
+
+Ok, lets get started!
+
+Create Project
+
+Create a new project, and inside it, create the following folders: backend, frontend, files, and a file named Caddyfile.
+
+In this article, the backend will use Go, and the frontend will use Vue3, but you are free to choose any technologies. The important thing is that the backend should run on a specific port, and the frontend should serve static files.
+
+Backend
+
+```jsx
+cd backend
+```
+Then initialize Go, replace <username> below with your own username. Also, install go-chi.
+
+```jsx
+# Init Go
+go mod init github.com/<username>/caddy-backend
+
+# Install Go-Chi
+```shell
+go get -u github.com/go-chi/chi/v5
+```
+Create file main.go and add this lines:
+```jsx
+package main
+
+import (
+	"net/http"
+
+	"github.com/go-chi/chi/v5"
+	"github.com/go-chi/chi/v5/middleware"
+)
+
+func main() {
+	r := chi.NewRouter()
+	r.Use(middleware.Logger)
+	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("Hello Caddy"))
+	})
+	http.ListenAndServe(":4100", r)
+}
+```
