@@ -8,9 +8,9 @@ export const DATA = {
   location: "Malang, West Java",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer turned Entrepreneur. I love building things and helping people.",
   summary:
-    "At the end of 2022, I transitioned from my role as a software engineer to focus full-time on building and scaling my own SaaS businesses. As a Senior Software Engineer with over a decade of experience, I specialize in creating high-quality, efficient, and lightweight software solutions. My work blends functionality with elegance, driven by a passion for innovation, continuous improvement, and delivering impactful, user-centric products.",
+    "At the end of 2022, I decided to focus more on building and growing my own SaaS business. With over a decade of experience as a Senior Software Engineer, I specialize in creating high-quality, efficient, and lightweight software solutions. My work blends functionality with aesthetics, driven by a passion for innovation, continuous improvement, and delivering impactful, user-centric products.",
   avatarUrl: "/me.png",
   skills: [
     "Golang",
@@ -270,12 +270,12 @@ export const DATA = {
       description:
         `-Mobile App Development: Designed and launched the Autobayar app using Flutter, enabling seamless transfers, bill payments, and prepaid purchases.
         -Web Solutions: Created a logistics aggregator for shipment tracking and a customizable form builder for sellers to enhance sales management.
-        -Marketing Tools: Developed a WhatsApp broadcast platform to streamline marketing campaigns and boost customer engagement.
-        -Tech Stack : Golang, Php, Echo framework, Codeigniter, Flutter, Postgresql, Mongodb, Redis, Memcache`,
+        -Marketing Tools: Developed a WhatsApp broadcast platform to streamline marketing campaigns and boost customer engagement.`,
       image:
         "/shopify.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
+      tags:["Golang", "Php", "Echo framework", "Codeigniter", "Flutter", "Postgresql", "Mongodb", "Redis", "Memcache"]
     },
     {
       company: "PT Privy Identitas Digital",
@@ -285,12 +285,12 @@ export const DATA = {
       description:
         `-Middleware Development: Designed and maintained middleware modules to integrate corporate partners with digital signature and authentication systems.
         -Service Optimization: Monitored digital signature usage, ensuring high performance and reliability for corporate clients.
-        -Pricing Management: Configured pricing and related settings to align with client needs and business goals.
-        -Tech Stack : Ruby on Rails, Grape, Postgresql, Mongodb, Redis, Kafka, jenkins.`,
+        -Pricing Management: Configured pricing and related settings to align with client needs and business goals.`,
       image:
         "/privy.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
+      tags:["Ruby on Rails", "Grape", "Postgresql", "Mongodb", "Redis", "Kafka", "jenkins"]
     },
     {
       company: "Eaciit Ltd",
@@ -300,12 +300,12 @@ export const DATA = {
       description:
         `-Internal Systems Development: Built and maintained systems for attendance, leave management, and payroll to enhance operational efficiency.
         -Employee Self-Service (ESS) Apps: Developed web and mobile ESS platforms for TPS, enabling seamless attendance logging, leave requests, and payroll access.
-        -ERP Integration: Integrated ESS with Microsoft Dynamics AX, ensuring smooth data synchronization and a unified employee management experience.
-        -Tech Stack : Flutter, Mongodb, .NET Framework, Golang.`,
+        -ERP Integration: Integrated ESS with Microsoft Dynamics AX, ensuring smooth data synchronization and a unified employee management experience.`,
       image:
         "/eaciit.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
+      tags:["Flutter", "Mongodb", ".NET Framework", "Golang"]
     },
     {
       company: "PT Bimasakti Multisinergi",
@@ -315,13 +315,14 @@ export const DATA = {
       description:
         `-Payment Systems Development: Enhanced PPOB systems, including APIs and biller modules, ensuring seamless integration and reliable performance.
         -Flight Reservations & Customer Tools: Built flight reservation systems with Selenium and Flutter and developed customer service applications using CodeIgniter.
-        -System Integration & Support: Led integration with partner systems and provided technical support, ensuring secure data exchange and operational reliability.
-        -Tech Stack : Java, Springboot, Php, Codeigniter, Postgresql, MySQL`,
+        -System Integration & Support: Led integration with partner systems and provided technical support, ensuring secure data exchange and operational reliability.`,
       image:
         "/bimasakti.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
+      tags:["Java", "Springboot", "Php", "Codeigniter", "Postgresql", "MySQL"]
     },
+    
     {
       company: "PT Triklin Rekatama",
       title: "Software Developer",
@@ -334,12 +335,9 @@ export const DATA = {
         "/shopify.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
+      tags:["Php", "Java", "Postgresql", "Oracle"]
     }
-
-
   ],
-
-
   hackathons: [
     {
       title: "Hack Western 5",

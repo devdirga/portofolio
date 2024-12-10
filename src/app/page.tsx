@@ -7,18 +7,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import WhatsAppRedirect from "@/components/whatsapp";
 import { DATA } from "@/data/resume";
-import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  const handleWhatsAppRedirect = () => {
-    const phoneNumber = '1234567890'; // Replace with the WhatsApp phone number (with country code)
-    const message = 'Hello, I need help with your service.'; // Customize the message
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
-  };
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -58,9 +51,6 @@ export default function Page() {
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
-
-          
-          
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
@@ -72,12 +62,13 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
                   <HackathonCard
-                  company={project.company}
+                    company={project.company}
                     title={project.title}
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
+                    tags={project.tags}
                     links={project.links}
                   />
                 </BlurFade>
@@ -164,7 +155,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      
+
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -176,12 +167,11 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm whatsapp and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Want to chat? Just shoot me a dm whatsapp and I&apos;ll respond
+                whenever I can. I will ignore all soliciting.
               </p>
-              
+
               <WhatsAppRedirect />
-              
             </div>
           </BlurFade>
         </div>

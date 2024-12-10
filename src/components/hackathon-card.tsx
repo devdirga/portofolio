@@ -10,6 +10,7 @@ interface Props {
   dates: string;
   location: string;
   image?: string;
+  tags: readonly string[];
   links?: readonly {
     icon: React.ReactNode;
     title: string;
@@ -24,6 +25,7 @@ export function HackathonCard({
   dates,
   location,
   image,
+  tags,
   links,
 }: Props) {
   return (
@@ -53,6 +55,21 @@ export function HackathonCard({
       ))}
           </span>
         )}
+
+{tags && tags.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {tags?.map((tag) => (
+              <Badge
+                className="px-1 text-lg py-0 text-[10px]"
+                variant="secondary"
+                key={tag}
+              >
+                {tag}
+              </Badge>
+            ))}
+          </div>
+        )}
+
       </div>
       {links && links.length > 0 && (
         <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
