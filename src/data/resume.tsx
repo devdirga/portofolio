@@ -179,7 +179,7 @@ export const DATA = {
         {
           type: "Source (private)",
           href: "",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.github className="size-4" />,
         }
       ],
       image: "",
@@ -208,7 +208,7 @@ export const DATA = {
         {
           type: "Source (private)",
           href: "",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.github className="size-4" />,
         }
       ],
       image: "",
@@ -237,7 +237,7 @@ export const DATA = {
         {
           type: "Source (private)",
           href: "",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.github className="size-4" />,
         },
       ],
       image: "",
@@ -268,7 +268,7 @@ export const DATA = {
         {
           type: "Source (private)",
           href: "",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.github className="size-4" />,
         }
       ],
       image: "",
