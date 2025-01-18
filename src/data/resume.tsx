@@ -8,21 +8,28 @@ export const DATA = {
   location: "Malang, West Java",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people.",
+    "Software Engineer. I love building things and helping people.",
   summary:
-    "At the end of 2022, I decided to focus more on building and growing my own SaaS business. With over a decade of experience as a Senior Software Engineer, I specialize in creating high-quality, efficient, and lightweight software solutions. My work blends functionality with aesthetics, driven by a passion for innovation, continuous improvement, and delivering impactful, user-centric products.",
+    "I am Software Engineer with over a decade of experience as a Senior Software Engineer, I specialize in creating high-quality, efficient, and lightweight software solutions. My work blends functionality with aesthetics, driven by a passion for innovation, continuous improvement, and delivering impactful, user-centric products.",
   avatarUrl: "/me.png",
   skills: [
     "Golang",
     "EchoFramework",
     "FiberGo",
-    "Ruby on rails",
+    "Ruby",
+    "Ruby on Rails",
+    "PHP",
+    "Laravel",
+    "Codeigniter",
+    "Dart",
     "Flutter",
+    "ReactJS",
     "Nextjs",
     "Postgres",
-    "Docker",
+    "MongoDB",
     "Redis",
     "Kafka",
+    "Docker",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -278,19 +285,20 @@ export const DATA = {
   ],
   works: [
     {
-      company: "Self Employee",
+      company: "PT Auto Serba Digital",
       title: "Software Developer",
       dates: "2022 - recent",
-      location: "Malang, WestJava",
+      location: "Surabaya, WestJava",
       description:
-        `-Mobile App Development: Designed and launched the Autobayar app using Flutter, enabling seamless transfers, bill payments, and prepaid purchases.
+        `-Web Developer: Designed and launched the AutoLaris website using Laravel ,Codeigniter and React, enabling seller website builder.
+        -Mobile App Development: Designed and launched the Autobayar app using Flutter, enabling seamless transfers, bill payments, and prepaid purchases.
         -Web Solutions: Created a logistics aggregator for shipment tracking and a customizable form builder for sellers to enhance sales management.
         -Marketing Tools: Developed a WhatsApp broadcast platform to streamline marketing campaigns and boost customer engagement.`,
       image:
         "/shopify.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
-      tags:["Golang", "Php", "Echo framework", "Codeigniter", "Flutter", "Postgresql", "Mongodb", "Redis", "Memcache"]
+      tags:["Golang","Echo framework", "Php","Laravel","Codeigniter", "Flutter", "Postgresql", "Mongodb", "Redis", "Memcache"]
     },
     {
       company: "PT Privy Identitas Digital",
@@ -305,7 +313,7 @@ export const DATA = {
         "/privy.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
-      tags:["Ruby on Rails", "Grape", "Postgresql", "Mongodb", "Redis", "Kafka", "jenkins"]
+      tags:["Ruby","Ruby on Rails", "Grape(API)", "Postgresql", "Mongodb", "Redis", "Kafka", "jenkins"]
     },
     {
       company: "Eaciit Ltd",
